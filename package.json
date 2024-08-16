@@ -1,0 +1,23 @@
+{
+  "name": "digital-time-capsule",
+  "version": "0.1.0",
+  "description": "A Digital Time Capsule DApp using Cartesi Rollups API",
+  "dependencies": {
+    "ethers": "^6.7.1",
+    "crypto": "^1.0.1"
+  },
+  "devDependencies": {
+    "esbuild": "^0.19.2"
+  },
+  "scripts": {
+    "build": "esbuild ./src/index.js --bundle --outfile=dist/index.js --platform=node --target=node20",
+    "start": "ROLLUP_HTTP_SERVER_URL=\"http://127.0.0.1:5004\" node dist/index.js"
+  },
+  "keywords": [
+    "cartesi",
+    "dapp",
+    "time-capsule",
+    "blockchain"
+  ],
+  "license": "MIT"
+}
